@@ -1,4 +1,4 @@
-package main
+package zellowork
 
 import (
 	"crypto/md5"
