@@ -24,10 +24,10 @@ import (
 ac := zellowork.NewAPIClient(url, apikey)
 _, err := ac.Authenticate(username, password)
 if err != nil {
-    t.Error(err)
+    panic(err)
 }
 err = ac.ChannelAdd("Test Channel", false, false)
 if err != nil {
-    t.Error(err)
+    panic(err)
 }
 ```
