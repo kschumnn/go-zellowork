@@ -1,4 +1,4 @@
-package zellowork
+package api
 
 import (
 	"crypto/md5"
