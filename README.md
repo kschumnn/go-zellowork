@@ -21,7 +21,7 @@ Example for Creating a Channel
 import (
     zellowork "github.com/kschumnn/go-zellowork"
 )
-ac := zellowork.NewAPIClient(url, apikey)
+ac := zellowork.NewAPIClient("https://example.zellowork.com", "abcdefg12345678234567")
 _, err := ac.Authenticate(username, password)
 if err != nil {
     panic(err)
