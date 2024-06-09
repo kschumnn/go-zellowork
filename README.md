@@ -18,7 +18,10 @@ You need a valid ZelloWork Instance aswell as an active API Token + User Credent
 ## Usage <a name = "usage"></a>
 Example for Creating a Channel
 ```go
-ac := NewAPIClient(url, apikey)
+import (
+    zellowork "github.com/kschumnn/go-zellowork"
+)
+ac := zellowork.NewAPIClient(url, apikey)
 _, err := ac.Authenticate(username, password)
 if err != nil {
     t.Error(err)
